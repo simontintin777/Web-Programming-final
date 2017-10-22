@@ -1,0 +1,77 @@
+<br></br><br></br>
+<div class="container">
+	<table id="cart" class="table table-hover table-condensed">
+		<thead>
+			<tr>
+				<th style="width:50%">Product</th>
+				<th style="width:10%">Price</th>
+				<th style="width:8%">Quantity</th>
+				{{!--
+				<th style="width:22%" class="text-center">Subtotal</th>--}}
+				<th style="width:10%"></th>
+			</tr>
+		</thead>
+		{{# if products}}
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+				<ul class="list-group">
+					{{# each products}}
+					<tbody>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2"><img src="{{this.item.productImage}}" alt="..." class="img-responsive" width="100" height="80" />
+										<h>{{this.item.title}}</h>
+									</div>
+									<div class="col-sm-10">
+									</div>
+								</div>
+							</td>
+							<td data-th="Price">{{this.price}}</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value={{this.qty}}>
+							</td>
+							{{!--
+							<td data-th="Subtotal" class="text-center">1.99</td>--}}
+							<td class="actions" data-th="">
+								<a href="http://localhost:3000/cart/reduce/{{this.item._id}}"><button class="btn btn-info btn-sm"><i class="fa fa-minus-square"></i></button> </a>
+								<a href="http://localhost:3000/cart/remove/{{this.item._id}}"><button class="btn btn-danger btn-sm"><i class="fa fa-trash-o" ></i></button>	</a>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						{{!--
+						<tr class="visible-xs">
+							<td class="text-center"><strong>Total 1.99</strong></td>
+						</tr>--}} {{/each}}
+				</ul>
+			</div>
+			<div>
+				<td>
+					<br></br>
+					<a href="http://localhost:3000/products/allproducts" role="button" class="btn btn-success">
+                            Continue Shopping <span class="glyphicon glyphicon-play"></span>
+                        </a></td>
+				<td></td>
+				<td></td>
+				<td>
+					<h><strong> <strong> Total: {{totalPrice}}</strong></strong>
+					</h>
+					<br> </br>
+					<a href="http://localhost:3000/checkout/checkout" role="button" class="btn btn-success">
+                            Checkout <span class="glyphicon glyphicon-play"></span>
+                        </a></td>
+			</div>
+		</div>
+		<hr> {{!--
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+				<a href="http://localhost:3000/checkout/checkout" class="btn btn-success pull-left" role="button">Checkout</a>
+			</div>
+		</div>--}} {{else}}
+		<div class="row">
+			<h2 class="col-sm-12">
+				<strong>No Item In Cart</strong>
+			</h2>
+		</div>
+		{{/if}}

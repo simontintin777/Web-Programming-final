@@ -1,0 +1,29 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "fina project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BGM",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.2",
+    "express-validator": "^3.2.0",
+    "mongodb": "^2.2.26",
+    "node-uuid": "^1.4.8",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "uuid": "^3.0.1"
+  }
+}

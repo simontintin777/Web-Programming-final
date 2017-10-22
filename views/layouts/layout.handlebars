@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Shop Homepage - BGM</title>
+	<!-- Bootstrap core CSS -->
+	<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Temporary navbar container fix -->
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+	<style>
+		.navbar-toggler {
+			z-index: 1;
+		}
+		
+		@media (max-width: 576px) {
+			nav > .container {
+				width: 100%;
+			}
+		}		
+		.carousel-item.active,
+		.carousel-item-next,
+		.carousel-item-prev {
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample"
+			aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+  </button>
+		<div class="container">
+			<a class="navbar-brand" href="/">BGM--Shopping</a>
+			<div class="collapse navbar-collapse" id="navbarExample">
+				<ul class="navbar-nav ml-auto">
+					{{#if user}}
+					<li class="nav-item active">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li><a class="nav-link" href="/customers/profile/{{user._id}}">Profile</a></li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="/customers/logout">Logout</a>
+					</li>
+					{{else}}
+					<li class="nav-item">
+						<a class="nav-link" href="/customers/login">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/customers/register">Register</a>
+					</li>
+					{{/if}}
+					<li><a class="nav-link" href="/cart/shopping-cart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
+                    </a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9">
+				{{{body}}}
+			</div>
+		</div>
+		<div class="row">
+		</div>
+	</div>
+
+	<script src="/vendor/bootstrap/js/tota11y.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script src="/vendor/jquery/jquery.min.js"></script>
+	<script src="/vendor/tether/tether.min.js"></script>
+	<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

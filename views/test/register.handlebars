@@ -1,0 +1,64 @@
+<br></br><br></br>
+<h2 class="page-header">Register</h2>
+
+{{#if errors}} {{#each errors}}
+<div class="alert alert-danger">{{msg}}</div>
+{{/each}} {{/if}}
+
+<form method="post" action="/customers/register">
+	<div class="form-group">
+		<label for="my-input">email</label>
+		<input id="my-input" type="email" class="form-control" palceholder="email" name="email">
+	</div>
+
+	<div class="form-group">
+		<label for="my-input">password</label>
+		<input id="my-input" type="password" class="form-control" palceholder="password" name="password">
+	</div>
+
+	<div class="form-group">
+		<label for="my-input">confirm password</label>
+		<input id="my-input" type="password" class="form-control" palceholder="password" name="password2">
+	</div>
+
+	<div class="form-group">
+		<label for="my-input">firstname</label>
+		<input id="my-input" type="text" class="form-control" palceholder="firstName" name="firstName">
+	</div>
+
+	<div class="form-group">
+		<label for="my-input">lastname</label>
+		<input id="my-input" type="text" class="form-control" palceholder="lastName" name="lastName">
+	</div>
+
+	<div class="form-group">
+		<label for="my-input">gender</label>
+		<input id="my-input" type="text" class="form-control" palceholder="gender" name="gender">
+	</div>
+
+	<div class="form-group">
+		<label for="my-input">phoneNumb</label>
+		<input id="my-input" type="text" class="form-control" palceholder="phoneNumb" name="phoneNumb">
+	</div>
+
+	<div class="form-group">
+		<label for="my-input">address</label>
+		<input id="my-input" type="text" class="form-control" palceholder="address" name="address">
+	</div>
+
+	<div class="form-group">
+		<label for="my-input">city</label>
+		<input id="my-input" type="text" class="form-control" palceholder="city" name="city">
+	</div>
+
+	<div class="form-group">
+		<label for="my-input">state</label>
+		<input id="my-input" type="text" class="form-control" palceholder="state" name="state">
+	</div>
+
+	<div class="form-group">
+		<label for="my-input">zipCode</label>
+		<input id="my-input" type="text" class="form-control" palceholder="zipCode" name="zipCode">
+	</div>
+	<button type="submit" class="btn btn-default">Submit</button>
+</form>

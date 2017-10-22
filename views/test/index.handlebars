@@ -1,0 +1,132 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+			{{#if success_msg}}
+
+			<div id="success" class="alert alert-success"> {{success_msg}}
+
+			</div>
+
+			{{/if}}
+		</div>
+		<div>
+			<td>
+				<br></br>
+				<a href="http://localhost:3000/products/allproducts" role="button" class="fa fa-shopping-bag pull left">
+					<h> <strong> <strong> Go Shopping </strong></strong>
+					</h><span class="glyphicon glyphicon-play"></span>
+				</a>
+			</td>
+		</div>
+	</div>
+
+	<div id="myCarousel" class="carousel slide " data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" style=" width:100%; height: 300px !important;">
+			<div class="item active">
+				<img src="/picture/Home/picture1.jpg" style="width:100%;height: 300px" alt="">
+			</div>
+
+			<div class="item">
+				<img src="/picture/Home/picture2.jpg" style="width:100%;height: 300px" alt="">
+			</div>
+
+			<div class="item">
+				<img src="/picture/Home/picture3.jpg" style="width:100%;height: 300px" alt="">
+			</div>
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="nonono">p</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="nonono">n</span>
+		</a>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+		</div>
+		<div>
+			<td>
+				<br></br>
+				<a href="http://localhost:3000/products/allproducts" role="button" class="fa fa-shopping-bag pull left">
+					<h> <strong> <strong> Find More </strong></strong>
+					</h><span class="glyphicon glyphicon-play"></span>
+				</a>
+			</td>
+
+			{{!--<button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                        </button></td>--}}
+			<td></td>
+			<td></td>
+			<td>
+				<h><strong> <strong></strong></strong>
+				</h>
+				<br> </br>
+					<span></span>
+			</td>
+		</div>
+	</div>
+
+	<div id="myCarousel" class="carousel slide " data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" style=" width:100%; height: 300px !important;">
+			<div class="item active">
+				<img src="/picture/Home/picture3.jpg" style="width:100%;height: 300px" alt="">
+			</div>
+
+			<div class="item">
+				<img src="/picture/Home/picture1.jpg " style="width:100%;height: 300px" alt="">
+			</div>
+
+			<div class="item">
+				<img src="/picture/Home/picture2.jpg" style="width:100%;height: 300px" alt="">
+			</div>
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="nonono">p</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="nonono">n</span>
+		</a>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<p class="text-muted">&copy; <strong>BGM</strong></p>
+		<p class="text-muted">Lingteng Zheng, Shengjie Hu, Xiaotong Chen, Xinyu Liu, Yi Ding</p>
+	</div>
+</footer>
